@@ -38,6 +38,7 @@ namespace ChatUsingRMQ
             this.BtnClearChat = new System.Windows.Forms.Button();
             this.PlChat = new System.Windows.Forms.Panel();
             this.BtnConnect = new System.Windows.Forms.Button();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.PlChat.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -125,11 +126,23 @@ namespace ChatUsingRMQ
             this.BtnConnect.UseVisualStyleBackColor = true;
             this.BtnConnect.Click += new System.EventHandler(this.BtnConnect_Click);
             // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(20, 373);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(188, 13);
+            this.linkLabel1.TabIndex = 6;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "https://github.com/melharfi/ChatRMQ";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
             // Chat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(503, 371);
+            this.ClientSize = new System.Drawing.Size(503, 395);
+            this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.BtnConnect);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.TbNickname);
@@ -158,5 +171,6 @@ namespace ChatUsingRMQ
         private System.Windows.Forms.Button BtnClearChat;
         private System.Windows.Forms.Panel PlChat;
         private System.Windows.Forms.Button BtnConnect;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }

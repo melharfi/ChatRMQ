@@ -48,9 +48,11 @@ namespace ChatUsingRMQ
             catch(BrokerUnreachableException ex)
             {
                 MessageBox.Show("Server RabbitMQ unreachable", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                Chat.ActiveForm.BeginInvoke((Action)(() =>
+                Chat chat = (Chat)Application.OpenForms["Chat"];
+                if(chat != null)
+                chat.BeginInvoke((Action)(() =>
                 {
-                    Application.OpenForms["Chat"].Close();
+                    chat.Close();
                 }));
             }
         }
