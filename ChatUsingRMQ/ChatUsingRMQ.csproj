@@ -81,6 +81,10 @@
       <DependentUpon>Chat.cs</DependentUpon>
     </Compile>
     <Compile Include="ConsumerService.cs" />
+    <Compile Include="Events\IEvent.cs" />
+    <Compile Include="Events\MessageReceived.cs" />
+    <Compile Include="Events\UserLoggedOut.cs" />
+    <Compile Include="Events\UserLoggedIn.cs" />
     <Compile Include="ProducerService.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

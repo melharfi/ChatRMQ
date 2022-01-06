@@ -60,6 +60,7 @@ namespace ChatUsingRMQ
             // 
             // RtbMessages
             // 
+            this.RtbMessages.AcceptsTab = true;
             this.RtbMessages.Location = new System.Drawing.Point(10, 61);
             this.RtbMessages.Name = "RtbMessages";
             this.RtbMessages.Size = new System.Drawing.Size(458, 231);

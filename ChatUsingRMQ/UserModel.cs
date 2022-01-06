@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ChatUsingRMQ
 {
-    public class MessageReceived
+    public class UserModel
     {
         public string Nickname { get; set; }
         public string Message { get; set; }
